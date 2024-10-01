@@ -19,6 +19,7 @@ Notes:
 # Example
 
 ```txt
+# here, user `ubuntu` is running the setup script
 $ BACKUP_SCRIPT=/tmp/a.bash bash setup_cron_backup.bash 
 Cron job added: 0 2 * * * /tmp/a.bash >> /home/ubuntu/backup.log 2>&1
 
