@@ -16,7 +16,7 @@ fi
 if [ $? -eq 0 ]; then
     echo "Cron job already exists for ${backup_script}"
 else
-    # Add the cron job
+    # Add the new cron job to existing ones
     (crontab -l; echo "${cron_job}") | crontab -
     echo "Cron job added: ${cron_job}"
 fi
