@@ -1,5 +1,5 @@
 # Before continue
-- Download and install gcloud + authenticate(see [lab07](../lab07/README.md))
+- Download and install gcloud + authenticate (see [lab07](../lab07/README.md)).
 
 # Setup
 ## Create a template for scaling
