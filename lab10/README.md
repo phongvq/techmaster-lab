@@ -81,6 +81,17 @@ Apply complete! Resources: 5 added, 0 changed, 0 destroyed.
 
 ```
 
+- Go to GCP console to double check.
+
+VPC + Subnet:
+![VPC Subnet](./demos/vpc_subnet_2024-10-04_23-43.png)
+
+Static IP (use for outbound traffic, which goes through NAT router):
+![Static ip address](./demos/static_ip_2024-10-04_23-43.png)
+
+Cloud NAT:
+![Cloud NAT](./demos/cloudnat_2024-10-04_23-44.png)
+
 __IMPORTANT__: be cautious when run this command below in real system.
 
 - To clean resource, run `terraform destroy`, type `yes` to confirm. `-` in the output indicates that attributes/resources will be destroyed.
