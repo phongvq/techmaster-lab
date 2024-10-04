@@ -1,4 +1,9 @@
-TODO: copy tfvar
+# Overview
+
+This is a terraform module to provision:
+- A VPC with one subnet inside
+- A static public IP, attach it to a NAT Router.
+This allow application/service in the subnet (in GCE, GKE, etc. for example)
 
 # Preparation
 - Install terraform. See [this guide](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
