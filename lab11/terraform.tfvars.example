@@ -1,0 +1,8 @@
+project_id       = "XXXX" # replace with your GCP project id
+region           = "asia-east1"
+autoscaler_zone  = "asia-east1-a"
+bucket_name      = "sources"
+min_replicas     = 2
+max_replicas     = 5
+source_code_path = ""
+
