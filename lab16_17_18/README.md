@@ -57,6 +57,32 @@ service/echo-service created
 
 ```
 
+Forward this app to host network, to test if it's working:
+
+```txt
+> kubectl port-forward service/echo-service 8080:8080
+
+Forwarding from 127.0.0.1:8080 -> 8080
+Forwarding from [::1]:8080 -> 8080
+```
+
+Use `curl` to send request to the app.
+
+```txt
+> curl http://localhost:8080/arandomendpoint
+Request served by echo-app-5fd5f6c979-2mqqb
+
+HTTP/1.1 GET /arandomendpoint
+
+Host: localhost:8080
+Accept: */*
+User-Agent: curl/8.7.1
+
+```
+
+You can see it's echoing the request it received.
+
+# Test autoscaling
 In this lab, cpu percentage is set to 1%, so we can easily observe scaling behaviour.
 
 Get all pods (namespace: `default`), to check:
